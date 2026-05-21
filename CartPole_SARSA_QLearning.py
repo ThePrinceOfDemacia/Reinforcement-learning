@@ -29,10 +29,10 @@ target_update_freq = 20
 
 max_episodes = 2000
 
-model_path = f"cartpole_{algorithm}.pt"
+model_path = f"models/cartpole_{algorithm}.pt"
 
-load_existing_model = True
-play_only = True
+load_existing_model = False
+play_only = False
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
